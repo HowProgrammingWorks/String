@@ -1,7 +1,7 @@
 'use strict';
 
 const name = 'Marcus Aurelius';
-console.log(name);
+console.log(name); // Marcus Aurelius
 
 // Polyfill
 
@@ -11,7 +11,7 @@ if (!String.prototype.includes) {
   };
 }
 
-console.log(name.includes('Mar'));
+console.log(name.includes('Mar')); // true
 
 // Bad practice
 
@@ -19,4 +19,4 @@ String.prototype.includesWord = function(s) {
   return (' ' + this + ' ').includes(' ' + s + ' ');
 };
 
-console.log(name.includesWord('Mar'));
+console.log(name.includesWord('Mar')); // false
