@@ -1,7 +1,9 @@
 'use strict';
 
 const name = 'Marcus Aurelius';
-console.log(name);
+
+console.log();
+console.log(`name = ${name}`);
 
 // Polyfill
 
