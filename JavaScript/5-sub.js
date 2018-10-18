@@ -6,17 +6,28 @@ console.log();
 console.log(`name = ${name}`);
 
 console.log();
+console.log('Deprecated: String.prototype.substr(start, length)');
 console.log(`name.substr(2) = '${name.substr(2)}'`);
-console.log(`name.substr(2, 4) = '${name.substr(2, 4)}'`);
 console.log(`name.substr(-3) = '${name.substr(-3)}'`);
+console.log(`name.substr(2, 4) = '${name.substr(2, 4)}'`);
 console.log(`name.substr(-3, 2) = '${name.substr(-3, 2)}'`);
+console.log(`name.substr(3, -2) = '${name.substr(3, -2)}'`);
+console.log(`name.substr(-3, -2) = '${name.substr(-3, -2)}'`);
 
 console.log();
+console.log('String.prototype.slice(begin, [end])');
+console.log(`name.slice(2) = '${name.slice(2)}'`);
+console.log(`name.slice(-3) = '${name.slice(-3)}'`);
+console.log(`name.slice(2, 4) = '${name.slice(2, 4)}'`);
+console.log(`name.slice(-3, 2) = '${name.slice(-3, 2)}'`);
+console.log(`name.slice(3, -2) = '${name.slice(3, -2)}'`);
+console.log(`name.slice(-3, -2) = '${name.slice(-3, -3)}'`);
+
+console.log();
+console.log('String.prototype.substring(begin, [end])');
 console.log(`name.substring(2) = '${name.substring(2)}'`);
+console.log(`name.substring(-3) = '${name.substring(-3)}'`);
 console.log(`name.substring(2, 4) = '${name.substring(2, 4)}'`);
-
-console.log();
-console.log(`name.slice(7) = '${name.slice(7)}'`);
-console.log(`name.slice(7, 9) = '${name.slice(7, 9)}'`);
-console.log(`name.slice(-5) = '${name.slice(-5)}'`);
-console.log(`name.slice(-5, -1) = '${name.slice(-5, -1)}'`);
+console.log(`name.substring(-3, 2) = '${name.substring(-3, 2)}'`);
+console.log(`name.substring(3, -2) = '${name.substring(3, -2)}'`);
+console.log(`name.substring(-3, -2) = '${name.substring(-3, -2)}'`);

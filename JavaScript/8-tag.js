@@ -1,7 +1,7 @@
 'use strict';
 
-const tag = (string, ...values) => {
-  console.dir({ string, values });
+const tag = (strings, ...values) => {
+  console.dir({ strings, values });
 };
 
 // Usage

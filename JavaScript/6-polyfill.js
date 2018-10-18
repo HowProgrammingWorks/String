@@ -18,7 +18,7 @@ console.log(name.includes('Mar'));
 // Bad practice
 
 String.prototype.includesWord = function(s) {
-  return (' ' + this + ' ').includes(' ' + s + ' ');
+  return ` ${this} `.includes(` ${s} `);
 };
 
 console.log(name.includesWord('Mar'));
