@@ -1,0 +1,19 @@
+({
+  name: 'toWeirdCase',
+  length: [120, 160],
+  test: toWeirdCase => {
+
+    const x = toWeirdCase('This is a test');
+    if (x !== 'ThIs Is A TeSt') throw new Error('Expected ThIs Is A TeSt result');
+    
+    const y = toWeirdCase('String');
+    if (y !== 'StRiNg') throw new Error('Expected StRiNg result');
+
+    const z = toWeirdCase('is');
+    if (z !== 'Is') throw new Error('Expected Is result');
+
+    const a = toWeirdCase('Weird string case');
+    if (a !== 'WeIrD StRiNg CaSe') throw new Error('Expected WeIrD StRiNg CaSe result');
+
+  }
+})
