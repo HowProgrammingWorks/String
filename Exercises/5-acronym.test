@@ -1,0 +1,19 @@
+({
+  name: 'convertToAcronim',
+  length: [70, 140],
+  test: convertToAcronim => {
+
+    const x = convertToAcronim('GNU Image Manipulation Program');
+    if (x !== 'GIMP') throw new Error('Expected GIMP result');
+    
+    const y = convertToAcronim('Kyiv Polytechnic Institute');
+    if (y !== 'KPI') throw new Error('Expected KPI result');
+
+    const z = convertToAcronim('First In, First Out');
+    if (z !== 'FIFO') throw new Error('Expected FIFO result');
+
+    const a = convertToAcronim('Complementary metal-oxide semiconductor');
+    if (a !== 'CMOS') throw new Error('Expected CMOS result');
+
+  }
+})

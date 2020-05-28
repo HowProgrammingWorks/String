@@ -1,0 +1,40 @@
+{
+  "name": "hpw",
+  "version": "0.1.8",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "description": "Labs Auto Checker",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "programming",
+    "node.js"
+  ],
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HowProgrammingWorks/Labs"
+  },
+  "bugs": {
+    "url": "https://github.com/HowProgrammingWorks/Labs/issues",
+    "email": "timur.shemsedinov@gmail.com"
+  },
+  "main": "./bin/hpw.js",
+  "bin": {
+    "hpw": "./bin/hpw.js"
+  },
+  "scripts": {
+    "install": "node ./bin/install.js",
+    "test": "node ./bin/hpw.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "concolor": "^0.1.12",
+    "metasync": "^0.3.31"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
+}

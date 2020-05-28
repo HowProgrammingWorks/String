@@ -1,0 +1,13 @@
+({
+  name: 'getEmojisFromText',
+  length: [120, 200],
+  test: getEmojisFromText => {
+    
+    const y = getEmojisFromText('0x9749, 0x9752, 0x9917, 0x9925, 0x9935');
+    if (y !== '⛏ ⛅ ⚽ ☘ ☕') throw new Error('Expected ⛏ ⛅ ⚽ ☘ ☕');
+
+    const z = getEmojisFromText('0x9975, 0x9977, 0x9917, 0x9968, 0x9935, 0x9978');
+    if (z !== '⛺ ⛏ ⛰ ⚽ ⛹ ⛷') throw new Error('Expected ⛺ ⛏ ⛰ ⚽ ⛹ ⛷');
+
+  }
+})

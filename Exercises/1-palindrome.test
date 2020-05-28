@@ -1,0 +1,17 @@
+({
+  name: 'isPalindrome',
+  length: [80, 120],
+  test: isPalindrome => {
+    const x = isPalindrome('racecar');
+    if (typeof x !== 'boolean') throw new Error('Expected boolean result');
+    if (x !== true) {
+      throw new Error('Expected true');
+    }
+
+    const y = isPalindrome('hello');
+    if (y === true) throw new Error('Expected false');
+
+    const z = isPalindrome('aBbA');
+    if (z !== true) throw new Error('Expected true');
+  }
+})

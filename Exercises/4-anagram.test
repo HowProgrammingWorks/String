@@ -1,0 +1,19 @@
+({
+  name: 'isAnagram',
+  length: [40, 120],
+  test: isAnagram => {
+
+    const x = isAnagram('hello', 'bye');
+    if (x !== false) throw new Error('Expected false when args are (hello, bye)');
+    
+    const y = isAnagram('fi^nd&e^r', 'Fri---end');
+    if (y !== true) throw new Error('Expected true when args are (fi^nd&e^r, Fri---end)');
+
+    const z = isAnagram('Eleven plus Two', 'Twelve plus one');
+    if (z !== true) throw new Error('Expected true when args are (Eleven plus Two, Twelve plus one)');
+
+    const a = isAnagram('finder', 'Friend');
+    if (a !== true) throw new Error('Expected true when args are (finder, Friend)');
+
+  }
+})

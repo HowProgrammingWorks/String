@@ -1,0 +1,24 @@
+({
+  name: 'humanizeFormat',
+  length: [180, 320],
+  test: humanizeFormat => {
+    const x = humanizeFormat();
+    if (typeof x !== 'undefined') throw new Error('Expected undefined result');
+    
+    const y = humanizeFormat(1);
+    if (y !== '1st') throw new Error('Expected 1st');
+    if (typeof y !== 'string') throw new Error('Type of result must be string');
+
+    const z = humanizeFormat(11);
+    if (z !== '11th') throw new Error('Expected 11th');
+
+    const a = humanizeFormat(13);
+    if (a !== '13th') throw new Error('Expected 13th');
+
+    const b = humanizeFormat(103);
+    if (b !== '103rd') throw new Error('Expected 103rd');
+
+    const c = humanizeFormat(402);
+    if (c !== '402nd') throw new Error('Expected 402nd');
+  }
+})
