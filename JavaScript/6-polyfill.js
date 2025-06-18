@@ -8,7 +8,7 @@ console.log(`name = ${name}`);
 // Polyfill
 
 if (!String.prototype.includes) {
-  String.prototype.includes = function(s) {
+  String.prototype.includes = function (s) {
     return this.indexOf(s) > -1;
   };
 }
@@ -17,7 +17,7 @@ console.log(name.includes('Mar'));
 
 // Bad practice
 
-String.prototype.includesWord = function(s) {
+String.prototype.includesWord = function (s) {
   return ` ${this} `.includes(` ${s} `);
 };
 
